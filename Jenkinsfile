@@ -19,7 +19,7 @@ pipeline {
         stage('Starting Service') {
             steps {
                 echo 'Starting tomcat services...'
-                sh '/usr/sbin/tomcat start'
+                sh '/usr/libexec/tomcat/server start & '
             }
         }
     }
